@@ -2,6 +2,38 @@ $(document).ready(function(){
   attachListeners()
 })
 
+function nextPost(){
+  var nextId = parseInt($(".js-next").attr("data-id"))
+  $.ajax({
+    type: "get",
+    url: `/posts/${nextId}`
+  }).done(function(post) {
+    var newPost = new Post(post.id, post.title, post.content, post.comments)
+    console.log(post)
+    newPost.updateView()
+  })
+}
+
+function Post(id, title, content, comments) {
+  this.id = id
+  this.title = title
+  this.content = content
+  this.comments = comments
+}
+
+Post.prototype.updateView = function(){
+
+    var postContent = `${this.content}`
+    var commentData = this.comments
+    var commentList = formatCommentList(commentData)
+
+    $("h3").text(this.title)
+    $("p.content").html(postContent)
+
+    $(".js-next").attr("data-id", this.id)
+    $("#comments").html(commentList)
+}
+
 function formatCommentList(comments){
   var commentInfo = ""
   for (var i = 0; i < comments.length; i++) {
@@ -13,6 +45,8 @@ function formatCommentList(comments){
 
 
 function attachListeners(){
+  $(".js-next").click(nextPost)
+
       $('form').submit(function(event){
       event.preventDefault()
       createNewComment(this)

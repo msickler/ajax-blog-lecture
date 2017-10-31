@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+   get 'posts/:id/next', to: 'posts#next'
   resources :posts do
     resources :comments # Nested Resource # /posts/1/comments
   end
