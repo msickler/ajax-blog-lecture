@@ -602,3 +602,688 @@ Processing by PostsController#show as */*
   [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
   Rendered posts/show.html.erb within layouts/application (2.4ms)
 Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:05:04 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (34.1ms)
+Completed 200 OK in 429ms (Views: 381.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/posts.self-2bbd8997184910652b66f00dfc5043328ff54df06399e8586b8b5c1a003bdfe5.js?body=1" for 98.208.214.75 at 2017-10-31 16:05:05 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/2" for 98.208.214.75 at 2017-10-31 16:05:07 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2" for 98.208.214.75 at 2017-10-31 16:05:09 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2" for 98.208.214.75 at 2017-10-31 16:05:17 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:06:40 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 89ms (Views: 87.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.self-bbddf69a5c7972c3ea411d9f020865a8b4fff64c1e544d0f48b35e9ab4442085.js?body=1" for 98.208.214.75 at 2017-10-31 16:06:40 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:06:42 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2.json" for 98.208.214.75 at 2017-10-31 16:06:42 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.12ms)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:06:45 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2.json" for 98.208.214.75 at 2017-10-31 16:06:45 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.05ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:06:46 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2.json" for 98.208.214.75 at 2017-10-31 16:06:46 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.08ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:06:47 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2.json" for 98.208.214.75 at 2017-10-31 16:06:47 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.09ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:07:59 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 91ms (Views: 89.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.self-1709233be7ab5b511ed27193e16af2a5b1a9c35427c6251db3cb46198474d716.js?body=1" for 98.208.214.75 at 2017-10-31 16:07:59 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:08:11 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:09:01 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.8ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 84ms (Views: 82.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/posts.self-644a060a004a02823ce69339dfb97a4b0823371568f0e6d0bb9db696a79f8136.js?body=1" for 98.208.214.75 at 2017-10-31 16:09:01 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/2.json" for 98.208.214.75 at 2017-10-31 16:09:03 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.05ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/2.json" for 98.208.214.75 at 2017-10-31 16:09:09 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.06ms)
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/1.json" for 98.208.214.75 at 2017-10-31 16:09:15 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.21ms)
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:10:35 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 83ms (Views: 81.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.self-c8c988931550bd74d6252993b020a9da5b765d01ca3754a8c8b5d6abfb2a0fcf.js?body=1" for 98.208.214.75 at 2017-10-31 16:10:35 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:10:46 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2.json" for 98.208.214.75 at 2017-10-31 16:10:46 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.08ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:18:50 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 106ms (Views: 93.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/posts.self-a3b3ba4ff94485ac065071cdfbe70a1c4c463431d9eef12f31c34fe2b9f3fbd9.js?body=1" for 98.208.214.75 at 2017-10-31 16:18:51 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/2" for 98.208.214.75 at 2017-10-31 16:18:53 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2.json" for 98.208.214.75 at 2017-10-31 16:18:53 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+[active_model_serializers] Rendered PostSerializer with ActiveModelSerializers::Adapter::Attributes (5.14ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for 98.208.214.75 at 2017-10-31 16:18:58 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=3):
+  app/controllers/posts_controller.rb:54:in `set_post'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (7.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (37.6ms)
+
+
+Started GET "/posts/3.json" for 98.208.214.75 at 2017-10-31 16:18:58 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=3):
+  app/controllers/posts_controller.rb:54:in `set_post'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (30.5ms)
+
+
+Started GET "/posts/3" for 98.208.214.75 at 2017-10-31 16:19:04 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=3):
+  app/controllers/posts_controller.rb:54:in `set_post'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (29.7ms)
+
+
+Started GET "/posts/3.json" for 98.208.214.75 at 2017-10-31 16:19:04 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=3):
+  app/controllers/posts_controller.rb:54:in `set_post'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (29.0ms)
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:19:11 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2" for 98.208.214.75 at 2017-10-31 16:19:14 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2.json" for 98.208.214.75 at 2017-10-31 16:19:14 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 2]]
+[active_model_serializers] Rendered PostSerializer with ActiveModelSerializers::Adapter::Attributes (2.47ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 98.208.214.75 at 2017-10-31 16:19:17 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.0ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for 98.208.214.75 at 2017-10-31 16:19:19 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (9.7ms)
+  Rendered posts/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 98.208.214.75 at 2017-10-31 16:19:26 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X9biUmOUEdx0gDqZ0biaUV8DqRAB/IWvkOHkBr80VmRsqHzjekXi7G8WghTXpUQ8avBIobJOuxjubruvm8rMhg==", "post"=>{"title"=>"third", "content"=>"hjhbh"}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `build' for #<Class:0x007feeb6d822d0>):
+  app/controllers/posts_controller.rb:17:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.1ms)
+
+
+Started POST "/posts" for 98.208.214.75 at 2017-10-31 16:19:52 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X9biUmOUEdx0gDqZ0biaUV8DqRAB/IWvkOHkBr80VmRsqHzjekXi7G8WghTXpUQ8avBIobJOuxjubruvm8rMhg==", "post"=>{"title"=>"third", "content"=>"hjhbh"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "third"], ["content", "hjhbh"], ["created_at", "2017-10-31 16:19:52.064966"], ["updated_at", "2017-10-31 16:19:52.064966"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://67.205.182.198:54259/posts/3
+Completed 302 Found in 12ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/posts/3" for 98.208.214.75 at 2017-10-31 16:19:52 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  Rendered posts/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 28ms (Views: 22.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for 98.208.214.75 at 2017-10-31 16:19:57 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for 98.208.214.75 at 2017-10-31 16:19:58 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.0ms)
+  Rendered posts/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 98.208.214.75 at 2017-10-31 16:20:05 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FLMrMEhMu6zXmMp1Ip13Rh3jkWN1Jp+dxPOz4yb6O0wnzbWBUZ1InMwOcvgkgKkrKBBw0saUoSq6fOxKAgShrg==", "post"=>{"title"=>"fourt", "content"=>"dddd"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "fourt"], ["content", "dddd"], ["created_at", "2017-10-31 16:20:05.704836"], ["updated_at", "2017-10-31 16:20:05.704836"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://67.205.182.198:54259/posts/4
+Completed 302 Found in 6ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/posts/4" for 98.208.214.75 at 2017-10-31 16:20:05 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  Rendered posts/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 98.208.214.75 at 2017-10-31 16:20:08 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:20:10 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:20:23 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2" for 98.208.214.75 at 2017-10-31 16:20:24 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2.json" for 98.208.214.75 at 2017-10-31 16:20:24 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+[active_model_serializers]   [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+[active_model_serializers] Rendered PostSerializer with ActiveModelSerializers::Adapter::Attributes (3.52ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for 98.208.214.75 at 2017-10-31 16:20:27 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  Rendered posts/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3.json" for 98.208.214.75 at 2017-10-31 16:20:27 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+[active_model_serializers]   [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+[active_model_serializers] Rendered PostSerializer with ActiveModelSerializers::Adapter::Attributes (0.96ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/4" for 98.208.214.75 at 2017-10-31 16:20:55 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 4]]
+  Rendered posts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/4.json" for 98.208.214.75 at 2017-10-31 16:20:56 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 4]]
+[active_model_serializers]   [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 4]]
+[active_model_serializers] Rendered PostSerializer with ActiveModelSerializers::Adapter::Attributes (0.87ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:22:20 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 105ms (Views: 104.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.self-6848e6e43abd8c8576549ad80244bf5187a5b1ff9e7f8fa8e958d42e8a184c7a.js?body=1" for 98.208.214.75 at 2017-10-31 16:22:20 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/2" for 98.208.214.75 at 2017-10-31 16:22:23 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2.json" for 98.208.214.75 at 2017-10-31 16:22:23 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+[active_model_serializers]   [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+[active_model_serializers] Rendered PostSerializer with ActiveModelSerializers::Adapter::Attributes (1.42ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1" for 98.208.214.75 at 2017-10-31 16:22:45 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 1]]
+  Rendered posts/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 93ms (Views: 91.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.self-f264c5f3caa7e4eee510d0b6a6b98d01082d5de3088f7f9f8378ceca3130d3e8.js?body=1" for 98.208.214.75 at 2017-10-31 16:22:46 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/2" for 98.208.214.75 at 2017-10-31 16:22:47 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+  Rendered posts/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2.json" for 98.208.214.75 at 2017-10-31 16:22:47 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+[active_model_serializers]   [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 2]]
+[active_model_serializers] Rendered PostSerializer with ActiveModelSerializers::Adapter::Attributes (2.07ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for 98.208.214.75 at 2017-10-31 16:22:53 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  Rendered posts/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3.json" for 98.208.214.75 at 2017-10-31 16:22:53 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+[active_model_serializers]   [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+[active_model_serializers] Rendered PostSerializer with ActiveModelSerializers::Adapter::Attributes (0.87ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/4" for 98.208.214.75 at 2017-10-31 16:22:55 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 4]]
+  Rendered posts/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/4.json" for 98.208.214.75 at 2017-10-31 16:22:55 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 4]]
+[active_model_serializers]   [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 4]]
+[active_model_serializers] Rendered PostSerializer with ActiveModelSerializers::Adapter::Attributes (0.91ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/5" for 98.208.214.75 at 2017-10-31 16:22:56 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 5]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=5):
+  app/controllers/posts_controller.rb:54:in `set_post'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (31.3ms)
+
+
+Started GET "/posts/5.json" for 98.208.214.75 at 2017-10-31 16:22:56 +0000
+Cannot render console from 98.208.214.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as JSON
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=5):
+  app/controllers/posts_controller.rb:54:in `set_post'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (31.1ms)

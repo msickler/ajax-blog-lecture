@@ -2,8 +2,20 @@ $(document).ready(function(){
   attachListeners()
 })
 
+$(function () {
+    $(".js-next").on("click", function() {
+      var nextId = parseInt($(".js-next").attr("data-id")) + 1;
+      $.get("/posts/" + nextId + ".json", function(data) {
+        $(".postTitle").text(data["title"]);
+        $(".postContent").text(data["content"]);
+
+        $(".js-next").attr("data-id", data["id"]);
+      });
+    });
+  });
+
 function nextPost(){
-  var nextId = parseInt($(".js-next").attr("data-id"))
+  var nextId = parseInt($(".js-next").attr("data-id")) + 1;
   $.ajax({
     type: "get",
     url: `/posts/${nextId}`
