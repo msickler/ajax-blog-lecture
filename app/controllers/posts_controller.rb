@@ -23,6 +23,7 @@ class PostsController < ApplicationController
  end
 
  def show
+   @comments = @post.comments
    @comment = Comment.new
    respond_to do |f|
      f.html {render :show}

@@ -2,18 +2,6 @@ $(document).ready(function(){
   attachListeners()
 })
 
-$(function () {
-    $(".js-next").on("click", function() {
-      var nextId = parseInt($(".js-next").attr("data-id")) + 1;
-      $.get("/posts/" + nextId + ".json", function(data) {
-        $(".postTitle").text(data["title"]);
-        $(".postContent").text(data["content"]);
-
-        $(".js-next").attr("data-id", data["id"]);
-      });
-    });
-  });
-
 function nextPost(){
   var nextId = parseInt($(".js-next").attr("data-id")) + 1;
   $.ajax({
@@ -33,17 +21,21 @@ function Post(id, title, content, comments) {
   this.comments = comments
 }
 
+
 Post.prototype.updateView = function(){
 
-    var postContent = `${this.content}`
-    var commentData = this.comments
-    var commentList = formatCommentList(commentData)
+  var postContent = this.content
+  var commentData = this.comments
+  var commentList = formatCommentList(commentData)
 
     $("h3").text(this.title)
     $("p.content").html(postContent)
 
     $(".js-next").attr("data-id", this.id)
+    $(".edit-link").html(`<a href="/posts/${this.id}/edit">Edit Post</a>`)
+    $(".delete-link").html(`<a href="/posts/${this.id}/destroy">Delete Post</a>`)
     $("#comments").html(commentList)
+    $("#post-field").html(`<input value="${this.id}" type="hidden" name="comment[post_id]" id="comment_post_id">`)
 }
 
 function formatCommentList(comments){
@@ -57,7 +49,7 @@ function formatCommentList(comments){
 
 
 function attachListeners(){
-  $(".js-next").click(nextPost)
+      $(".js-next").click(nextPost)
 
       $('form').submit(function(event){
       event.preventDefault()
@@ -95,7 +87,7 @@ function createNewComment(element){
         $("#comments").append(createdComment);
 
         $("#submit").prop( "disabled", false )
-        $("#comment_text").val("")
+        $("#comment_content").val("")
       });
 
 }

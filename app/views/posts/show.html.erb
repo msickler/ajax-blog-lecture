@@ -11,7 +11,6 @@
 </p>
 
 
-<button class="js-next" data-id="<%= @post.id %>">Next ---></button>
 <a href="#" class="js-next" data-id="<%=@post.id%>">Next</a>
 <!-- <p>
   <%#= link_to "Load Comments", post_comments_path(@post), :class => "load_comments", :remote => true %>
@@ -31,7 +30,7 @@
 <%= form_for @comment do |f| %>
   <label>Add a comment:</label>
   <%= f.text_field :content %>
-  <span id= "post-field">
+  <span id="post-field">
     <%= f.hidden_field :post_id, value: @post.id %>
   </span>
   <%= f.submit "Submit", id: "submit"%>
