@@ -1,75 +1,66 @@
-// Loading Comments via AJAX - Replaced by Remote True
-// $(function(){
-//   // $("a.load_comments").on("click", function(e){
-//     // You just clicked on the Load Comments Link
-//     // We'd love to use the HREF attribute of that link as the URL for the request
-//
-//     // Fire some ajax.
-//     // $.ajax({
-//     //   method: "GET",
-//     //   url: this.href
-//     // }).success(function(response){
-//     //   // Get the response (it's the variable data)
-//     //   $("div.comments").html(response)
-//     //   // We'd really want to load that data into the DOM (add it to the current page)
-//     // }).error(function(notNeeded){
-//     //   alert("we broke!!!!")
-//     // });
-//
-//     // Requesting HTML
-//     // $.get(this.href).success(function(response){
-//     //   $("div.comments").html(response)
-//     // })
-//
-//     // Requesting JSON
-//     // $.get(this.href).success(function(json){
-//     //   // clear the OL html (in case there were stale comments)
-//     //   var $ol = $("div.comments ol")
-//     //   $ol.html("") // emptied the OL
-//     //
-//     //   // iterate over each comment within json
-//     //   json.forEach(function(comment){
-//     //     // with each comment data, append an LI to the OL with the comment content
-//     //     $ol.append("<li>" + comment.content + "</li>");
-//     //   })
-//     // })
-//
-//
-//     // load that response into the HTML of the page.
-//   //   e.preventDefault();
-//   // })
-//
-//   $("a.load_comments").on("click", function(e){
-//     $.ajax({
-//       url: this.href,
-//       dataType: 'script'
-//     })
-//
-//     e.preventDefault();
-//   })
-// })
+$(document).ready(function(){
+  attachListeners()
+})
+
+function formatCommentList(comments){
+  var commentInfo = ""
+  for (var i = 0; i < comments.length; i++) {
+    let com = new Comment(comments[i]["id"],comments[i]["content"],comments[i]["post"]["title"])
+    commentInfo += com.formatComment() + " <button class='delete-comment' data='" + com.id + "' onclick='deleteComment(this)'>Delete</button></li>"
+  }
+  return commentInfo
+}
 
 
-// Submit Comments via AJAX - Soon to be replaced by remote true
-// $(function(){
-//   $("#new_comment").on("submit", function(e){
-//     // 1. we need the URL to submit the POST request too
-//     // 2. we need the form data.
-//
-//     // Low level
-//     $.ajax({
-//       type: ($("input[name='_method']").val() || this.method),
-//       url: this.action,
-//       data: $(this).serialize();, // either JSON or querystring serializing
-//       success: function(response){
-//         $("#comment_content").val("");
-//         var $ol = $("div.comments ol")
-//         $ol.append(response);
-//       }
-//     });
-//
-//     // Send a POST request to the correct place that form would've gone too anyway
-//     // along with the actual form data.
-//     e.preventDefault();
-//   })
-// });
+function attachListeners(){
+      $('form').submit(function(event){
+      event.preventDefault()
+      createNewComment(this)
+
+    })
+
+    $(".delete-comment").click(function(event){
+      event.preventDefault()
+      deleteComment(this)
+    })
+}
+
+
+function deleteComment(element){
+  var commentId = element.attributes["data"].value
+  $.ajax({
+    url: '/comments/' +commentId,
+    type: 'DELETE',
+    success: function(result){
+      $("#comment-"+result["id"]).replaceWith("")
+    }
+  })
+}
+
+function createNewComment(element){
+  var values= $(element).serialize()
+  var posting = $.post('/comments', values)
+
+  posting.done(function(comment) {
+
+        var newComment = new Comment(comment.id, comment.content, comment.post)
+
+        var createdComment = newComment.formatComment() + " <button class='delete-comment' data='" + comment.id + "' onclick='deleteComment(this)'>Delete</button></li>"
+        $("#comments").append(createdComment);
+
+        $("#submit").prop( "disabled", false )
+        $("#comment_text").val("")
+      });
+
+}
+
+
+function Comment(id, content, post){
+  this.id = id
+  this.content = content
+  this.post = post
+}
+
+Comment.prototype.formatComment = function(){
+    return "<li id='comment-"+ this.id +"'><strong>" + this.content + "</strong>"
+  }
